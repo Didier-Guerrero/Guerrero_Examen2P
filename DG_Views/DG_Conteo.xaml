@@ -3,19 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Guerrero_AppEvaluacion.DG_Views.DG_Conteo"
              Title="DG_Conteo">
-    <AbsoluteLayout  Margin="5" VerticalOptions="Center">
-        <Editor x:Name="TextEditor"
-                Placeholder="Ingrese el texto"
-                Text="{Binding Text}"
-                HeightRequest="100" />
+    <AbsoluteLayout Padding="20">
+        <Editor x:Name="TextConteo"
+        Placeholder="Enter your note"
+        Text="{Binding DG_Text}"
+        HeightRequest="40" WidthRequest="500"/>
 
-        <Grid ColumnDefinitions="*,*" ColumnSpacing="4" RowSpacing="6">
-            <Button Text="Calcular"
-                    Clicked="DG_GuardarButton_Clicked" />
+        <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,50,10,20" >
+            <Label Text="Números:"  />
+            <Label Text="{Binding DG_Numeros}"  />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,70" >
+            <Label Text="Letras:"  />
+            <Label Text="{Binding DG_Letras}"  />
+        </StackLayout>
 
-            <Button Grid.Column="1"
-                    Text="Limpiar"
-                    Clicked="DG_EliminarButton_Clicked" />
-        </Grid>
+        <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,90">
+            <Label Text="Vocales:" />
+            <Label Text="{Binding DG_Vocales}"  />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,110">
+            <Label Text="Mayúsculas:" />
+            <Label Text="{Binding DG_Mayusculas}"  />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,130">
+            <Label Text="Minúsculas:"  />
+            <Label Text="{Binding DG_Minusculas}"  />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,150">
+            <Label Text="Total:"  />
+            <Label Text="{Binding DG_Total}"  />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,190" Spacing="30">
+            <Button Text="Calcular" Clicked="DG_CalcularButton_Clicked"  />
+            <Button Text="Limpiar"  Clicked="DG_LimpiarButton_Clicked"/>
+        </StackLayout>
     </AbsoluteLayout>
 </ContentPage>

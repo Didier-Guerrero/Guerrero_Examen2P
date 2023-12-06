@@ -2,39 +2,39 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Guerrero_AppEvaluacion.DG_Views.DG_Conteo"
-             Title="DG_Conteo">
+             Title="DG_Conteo" BackgroundColor="Grey">
     <AbsoluteLayout Padding="20">
         <Editor x:Name="TextConteo"
-        Placeholder="Enter your note"
+        Placeholder="Ingrese el texto"
         Text="{Binding DG_Text}"
-        HeightRequest="40" WidthRequest="500"/>
+        HeightRequest="40" WidthRequest="500" TextColor="White" />
 
         <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,50,10,20" >
-            <Label Text="Números:"  />
-            <Label Text="{Binding DG_Numeros}"  />
+            <Label Text="Números:"  TextColor="White"/>
+            <Label Text="{Binding DG_Numeros}"  TextColor="White"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,70" >
-            <Label Text="Letras:"  />
-            <Label Text="{Binding DG_Letras}"  />
+            <Label Text="Letras:"  TextColor="White"/>
+            <Label Text="{Binding DG_Letras}"  TextColor="White"/>
         </StackLayout>
 
         <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,90">
-            <Label Text="Vocales:" />
-            <Label Text="{Binding DG_Vocales}"  />
+            <Label Text="Vocales:" TextColor="White" />
+            <Label Text="{Binding DG_Vocales}" TextColor="White" />
         </StackLayout>
 
         <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,110">
-            <Label Text="Mayúsculas:" />
-            <Label Text="{Binding DG_Mayusculas}"  />
+            <Label Text="Mayúsculas:" TextColor="White"/>
+            <Label Text="{Binding DG_Mayusculas}" TextColor="White" />
         </StackLayout>
 
         <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,130">
-            <Label Text="Minúsculas:"  />
-            <Label Text="{Binding DG_Minusculas}"  />
+            <Label Text="Minúsculas:"  TextColor="White"/>
+            <Label Text="{Binding DG_Minusculas}" TextColor="White" />
         </StackLayout>
         <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,150">
-            <Label Text="Total:"  />
-            <Label Text="{Binding DG_Total}"  />
+            <Label Text="Total:" TextColor="White" />
+            <Label Text="{Binding DG_Total}"  TextColor="White"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,190" Spacing="30">
             <Button Text="Calcular" Clicked="DG_CalcularButton_Clicked"  />

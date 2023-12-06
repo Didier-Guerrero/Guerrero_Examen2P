@@ -62,6 +62,9 @@
 	  <MauiXaml Update="DG_Views\DG_About.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="DG_Views\DG_Conteo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="DG_Views\DG_TodasNotas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
